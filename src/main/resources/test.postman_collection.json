@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "74ef09fe-4994-4471-9e62-af95f1f1a665",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21460027"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/shopping-carts/goods",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin@i.ua"
+					}
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"productId\": 1, \"count\": 5}"
+				},
+				"url": "http://localhost:8080/shopping-carts/goods"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders/complete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin@i.ua"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8080/orders/complete"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin@i.ua"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8080/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin@i.ua"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Iphone 11\", \"price\": 1700}"
+				},
+				"url": "http://localhost:8080/products"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/goods",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin@i.ua"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"productId\": 2, \"count\": 50}"
+				},
+				"url": "http://localhost:8080/goods"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/shopping-carts/by-user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin@i.ua"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8080/shopping-carts/by-user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/goods",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin@i.ua"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8080/goods"
+			},
+			"response": []
+		}
+	]
+}
