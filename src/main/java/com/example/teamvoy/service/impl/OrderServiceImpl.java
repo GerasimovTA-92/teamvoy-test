@@ -33,7 +33,7 @@ public class OrderServiceImpl implements OrderService {
         order.setUser(shoppingCart.getUser());
         order.setOrderTime(LocalDateTime.now());
         order.getGoods().forEach(e -> {
-            Goods goods = goodsService.findByProductId(e.getId());
+            Goods goods = goodsService.findByProductId(e.getProduct().getId());
             goods.setCount(goods.getCount() - e.getCount());
             goodsService.save(goods);
         });
